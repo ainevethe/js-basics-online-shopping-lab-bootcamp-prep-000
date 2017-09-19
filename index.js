@@ -69,6 +69,9 @@ function removeFromCart(item) {
   if (item === cart[i]) {
     console.log("That item is not in your cart");
     return currentCart;
+  } else {
+    currentCart.splice(item, cart[i]);
+    return currentCart;
   }
 }
 }
