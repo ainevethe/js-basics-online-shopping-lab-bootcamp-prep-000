@@ -65,13 +65,14 @@ function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++) {
     object = i;
   }
-}
   if (object > 0) {
     cart.splice(index, 1)
   } else {
     console.log("That item is not in your cart.");
   }
+}
 
 function placeOrder(cardNumber) {
   // write your code here
 }
+
