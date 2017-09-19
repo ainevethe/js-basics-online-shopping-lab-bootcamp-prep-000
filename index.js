@@ -70,7 +70,7 @@ function removeFromCart(item) {
     console.log("That item is not in your cart");
     return currentCart;
   } else {
-    currentCart.splice(item, cart[i]);
+    currentCart.splice(item, cart[i][item]);
     return currentCart;
   }
 }
