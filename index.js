@@ -61,10 +61,16 @@ function total() {
 }
 
 function removeFromCart(item) {
+  var currentCart = [];
+    for (var i = 0; i < cart.length; i++) {
+        for (var item in cart[i]) {
+          currentCart.push(item + " at $" + cart[i][item])
+        }
   if (item === cart[i]) {
     console.log("That item is not in your cart");
-    return currentCart
+    return currentCart;
   }
+}
 }
 
 function placeOrder(cardNumber) {
